@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Register
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <form (ngSubmit) = regis() >
+    <strong> Register </strong>
+    <ion-item>
+      <ion-label fixed>Username: </ion-label>
+        <ion-input type="text" [(ngModel)] = "username" name = "input"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>Password: </ion-label>
+        <ion-input type="text" [(ngModel)] = "password" name = "input"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>Phone: </ion-label>
+        <ion-input type="text" [(ngModel)] = "phone" name = "input"></ion-input>
+    </ion-item>
+    <button ion-button type ="submit" > Login </button>
+     <button ion-button type ="reset" > Reset </button>
+  </form>
+</ion-content>
